@@ -26,7 +26,8 @@
 <br/><br/><br/><br/>
 
 ## ERD
-![image](https://github.com/JoHyungJun/project_auction/assets/56953934/660cdcb6-aeea-4562-b786-39ec7c6bc18f)
+![image](https://github.com/JoHyungJun/project_auction/assets/56953934/f5d8c0b7-21a3-4856-a7a6-97eef0576c57)
+
 
 
 
