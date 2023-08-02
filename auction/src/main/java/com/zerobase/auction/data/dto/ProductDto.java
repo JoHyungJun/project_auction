@@ -1,5 +1,6 @@
 package com.zerobase.auction.data.dto;
 
+import com.zerobase.auction.data.entity.Product;
 import javax.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,4 +20,16 @@ public class ProductDto {
   private String category;
   private String explanation;
   private String status;
+
+  public static ProductDto fromEntity(Product product) {
+    return ProductDto.builder()
+        .id(product.getId())
+        .providerId(product.getProviderId())
+        .name(product.getName())
+        .price(product.getPrice())
+        .category(product.getCategory())
+        .explanation(product.getExplanation())
+        .status(product.getStatus())
+        .build();
+  }
 }

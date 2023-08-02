@@ -7,11 +7,7 @@ public interface ProductService {
 
   ProductDto getProduct(Long id);
 
-  List<ProductDto> getAllProducts(Long id);
-
-  List<ProductDto> getProvideProducts(Long id);
-
-  List<ProductDto> getConsumeProducts(Long id);
+  List<ProductDto> getAllProducts();
 
   List<ProductDto> getProductsByCategory(String category);
 
@@ -20,9 +16,9 @@ public interface ProductService {
   List<ProductDto> getProductsByDate();
   // date 처리 방법을 몰라 나중에 구현 예정
 
-  ProductDto saveProduct();
+  ProductDto saveProduct(Long providerId, String name, Long price, String category, String explanation);
 
-  ProductDto updateProduct(String name, String category, String explanation);
+  ProductDto updateProduct(Long id, String name, String category, String explanation);
 
   void deleteProvideProduct(Long id);
 
